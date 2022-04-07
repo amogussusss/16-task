@@ -1,0 +1,11 @@
+def J(n):
+    if n > 1:
+        return J(n-1) + F(n-1)
+    else:
+        return n
+def F(n):
+    if n > 1:
+        return F(n-1) + J(n)
+    else:
+        return n
+print(F(5))
