@@ -1,0 +1,6 @@
+def J(n):
+    if n > 2:
+        return J(n-2) + J(n//2)
+    else:
+        return n
+print(J(9))
